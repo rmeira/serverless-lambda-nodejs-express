@@ -1,23 +1,31 @@
-# serverless-lambda-nodejs-express
-Workshop realizado no evento Rocketseat RSXP
+# Serverless Lambda Node.JS Express
 
-Projeto contendo as imagens docker oficial do ambiente de desenvolvimento da althaia.
+Workshop realizado no evento Rocketseat RSXP
 
 ## Instalação
 
+Para usar esse projeto você deve ter o node, npm e yarn instalado em sua maquina confira mais informações em: 
 
-## Comandos
+- https://nodejs.org/en/
+- https://yarnpkg.com/
+
+Para instalar o necessario para rodar o projeto:
 
 ````
 npm i -g serverless && yarn install
 
-serverless deploy
+````
 
-serverless remove
+## Comandos
 
+Comandos para a configuração do serverless: https://serverless.com/
+
+````
+serverless create --template aws-nodejs --name seu-nome-lambda
 serverless config credentials --provider aws --key XXX --secret XXX
-serverless create --template aws-nodejs --name rafael-meira-lambda
 
+serverless deploy
+serverless remove
 ````
 
 
