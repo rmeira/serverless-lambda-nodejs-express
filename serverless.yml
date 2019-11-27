@@ -1,0 +1,16 @@
+service: rafael-meira-lambda
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  main:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: any
+      - http:
+          path: /{proxy+}
+          method: any
